@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Calculadora</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <h1>
+    Calculadora
+  </h1>
+  <div class="card">
+    <div class="calc-head">
+      <input type="text" id="result" maxlength="10">
+    </div>
+    <div class="calc-body">
+      <div>
+        <input type="button" class="btn btn-c" value="C" onclick="clearResult()">
+        <input type="button" class="btn btn-style" value="/" onclick="insertNumber('/')">
+      </div>
+      <div>
+        <input type="button" class="btn" value="7" onclick="insertNumber(7)">
+        <input type="button" class="btn" value="8" onclick="insertNumber(8)">
+        <input type="button" class="btn" value="9" onclick="insertNumber(9)">
+        <input type="button" class="btn btn-style" value="X" onclick="insertNumber('*')">
+      </div>
+      <div>
+        <input type="button" class="btn" value="4" onclick="insertNumber(4)">
+        <input type="button" class="btn" value="5" onclick="insertNumber(5)">
+        <input type="button" class="btn" value="6" onclick="insertNumber(6)">
+        <input type="button" class="btn btn-style" value="-" onclick="insertNumber('-')">
+      </div>
+      <div>
+        <input type="button" class="btn" value="1" onclick="insertNumber(1)">
+        <input type="button" class="btn" value="2" onclick="insertNumber(2)">
+        <input type="button" class="btn" value="3" onclick="insertNumber(3)">
+        <input type="button" class="btn btn-style" value="+" onclick="insertNumber('+')">
+      </div>
+      <div>
+        <input type="button" class="btn" value="0" onclick="insertNumber(0)">
+        <input type="button" class="btn" value="." onclick="insertNumber('.')">
+        <input type="button" class="btn" value="DEL" onclick="deleteNumber()">
+        <input type="button" class="btn btn-style-orange" value="=" onclick="calculate()">
+      </div>
+    </div>
+  </div>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="functions.js"></script>
+</body>
+</html>
